@@ -26,3 +26,6 @@ L = build_3d_laplacian(nx=32, ny=32, nz=32, dx=1.0)
 Lambda = build_lambda_coupling(n_layers=8, n_spatial=32**3, dlambda=1.0)
 # 执行演化
 trajectory = verlet_evolve(Phi0, Phi1, dt=0.02, steps=200)
+依赖
+numpy >= 1.24
+scipy >= 1.10.0
